@@ -20,7 +20,7 @@ const LoginRegister = () => {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://construction-material-recommendation-system-backend-mu.vercel.app/login", {
+      const res = await fetch("https://construction-material-recommendation-backend.vercel.app/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(loginData),
@@ -37,7 +37,7 @@ const LoginRegister = () => {
   const handleRegisterSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://construction-material-recommendation-system-backend-mu.vercel.app/register", registerData);
+      const res = await axios.post("https://construction-material-recommendation-backend.vercel.app/register", registerData);
       alert(res.data.message);
       setIsLogin(true);
     } catch (err) {
