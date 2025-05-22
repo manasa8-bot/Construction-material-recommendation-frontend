@@ -28,9 +28,9 @@ function MaterialForm({ onSubmit, material, onCancel }) {
     e.preventDefault();
     try {
       if (form._id) {
-        await axios.put(`https://construction-material-recommendation-system-backend-mu.vercel.app/materials/${form._id}`, form);
+        await axios.put(`https://construction-material-recommendation-backend.vercel.app/materials/${form._id}`, form);
       } else {
-        await axios.post('https://construction-material-recommendation-system-backend-mu.vercel.app/materials', form);
+        await axios.post('https://construction-material-recommendation-backend.vercel.app/materials', form);
       }
       onSubmit();
     } catch (error) {
