@@ -13,13 +13,13 @@ function MaterialList() {
   }, []);
 
   const fetchMaterials = async () => {
-    const res = await axios.get("https://construction-material-recommendation-system-backend-mu.vercel.app/materials");
+    const res = await axios.get("https://construction-material-recommendation-backend.vercel.app/materials");
     setMaterials(res.data);
   };
 
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this material?")) {
-      await axios.delete(`https://construction-material-recommendation-system-backend-mu.vercel.app/materials/${id}`);
+      await axios.delete(`https://construction-material-recommendation-backend.vercel.app/materials/${id}`);
       fetchMaterials();
     }
   };
