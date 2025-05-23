@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
-import { Link } from "react-router-dom";
 import MaterialSuggestionBanner from '../MaterialSuggestionBanner/MaterialSuggestionBanner';
-import SlidingImageCarousel from '../SlidingImageCarousel/SlidingImageCarousel';
 
 const MaterialRecommendation = () => {
   const [budget, setBudget] = useState("");
@@ -119,11 +117,6 @@ const MaterialRecommendation = () => {
                     <td>{material.Environmental_Suitability}</td>
                     <td>{material.Availability}</td>
                   </tr>
-                  <tr>
-                    <td colSpan="5">
-                      <SlidingImageCarousel materialName={material.Material} />
-                    </td>
-                  </tr>
                 </React.Fragment>
               ))}
             </tbody>
@@ -133,10 +126,10 @@ const MaterialRecommendation = () => {
 
       <footer className="footer">
         <p>
-          🏗️ Helps users find the most suitable building materials based on their budget, durability needs, and environmental preferences. Powered by intelligent data-driven recommendations and real-time visuals, this platform ensures smarter, safer, and more sustainable construction decisions.
+          Empowers users to select the ideal construction materials by analyzing cost, strength, and sustainability factors. Backed by intelligent recommendations and real-time insights, it streamlines efficient and eco-conscious building choices.
         </p>
         <p>
-          © {new Date().getFullYear()} | Developed with ❤️ by Manasa
+          © {new Date().getFullYear()} | Developed by Manasa
         </p>
       </footer>
     </div>
