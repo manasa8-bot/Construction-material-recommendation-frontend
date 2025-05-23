@@ -17,11 +17,11 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Welcome />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/home" element={<Welcome />} />
                 <Route path="/adminlogin" element={<AdminLogin />} />
                 <Route path="/dashboard" element={<DashBoard />} />
                 <Route path="/fetchusers" element={<FetchUsers />} />
