@@ -47,11 +47,6 @@ const MaterialRecommendation = () => {
     <div className="home-page-body">
       <header className="header">
         <h1>Construction Material Recommendation System</h1>
-        <nav>
-          <ul>
-            <li><Link to="/">Logout</Link></li>
-          </ul>
-        </nav>
       </header>
 
       <section className="intro">
